@@ -160,9 +160,18 @@ img {
 /* MAIN */
 
 /* HERO */
+
 .hero {
-	background-color: var(--secondary-bg-black);
 	padding: 200px 0;
+	max-width: 1600px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: var(--secondary-bg-black);
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .hero .conteiner {
@@ -220,6 +229,30 @@ img {
 	width: 270px;
 }
 
+.benefits-list .item::before {
+	display: block;
+	height: 120px;
+	border-radius: 4px;
+	content: "";
+	background-color: var(--secondary-bg-grey);
+	margin-bottom: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.benefits-list .icon-antenna::before {
+	background-image: url("../images/icon-antenna.svg");
+}
+.benefits-list .icon-clock::before {
+	background-image: url("../images/icon-clock.svg");
+}
+.benefits-list .icon-diagram::before {
+	background-image: url("../images/icon-diagram.svg");
+}
+.benefits-list .icon-astronaut::before {
+	background-image: url("../images/icon-astronaut.svg");
+}
+
 .benefits .text {
 	line-height: 1.7;
 	margin: 0;
@@ -248,7 +281,6 @@ img {
 /* OUR TEAM */
 .team {
 	background-color: var(--secondary-bg-grey);
-
 	text-align: center;
 }
 
